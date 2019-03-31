@@ -25,13 +25,9 @@ def get_all_queries():                          #Used to display all the queries
     txt.delete("1.0",END)
     txt.insert(INSERT,convert_to_string(master_references))
 
-def callback(event):
-
 #COMPONENTS:
 main = Tk(screenName = None,baseName = None,className = "Book Search",useTk = 1)
 txt_frm = Frame(main,width = 600,height = 600)
-
-#res = StringVar()
 txt = Text(txt_frm,borderwidth = 3,relief = "sunken")
 txt.config(font=("consolas", 12), undo=True, wrap='word')
 txt.grid(row=0, column=0, sticky="nsew", padx=2, pady=2)
@@ -48,8 +44,6 @@ r2 = Radiobutton(main,text = "Author",variable = radio_var,value = 2)
 r3 = Radiobutton(main,text = "ISBN",variable = radio_var,value = 3)
 search_button = Button(main,text = 'Search',activebackground = '#add8e6',command = get_result)
 all_queries = Button(main,text = 'All Queries',activebackground = '#add8e6',command = get_all_queries)
-
-#result_label = Label(main,textvariable = res,justify = LEFT)
 main.state('zoomed')
 
 #PACKING:
@@ -64,7 +58,6 @@ txt_frm.pack(fill = "both",expand = "True")
 txt_frm.grid_propagate(False)
 txt_frm.grid_rowconfigure(0, weight=1)
 txt_frm.grid_columnconfigure(0, weight=1)
-#result_label.pack(side = LEFT,fill = BOTH)
 
 #MAINLOOP
 main.mainloop()
