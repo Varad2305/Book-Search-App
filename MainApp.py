@@ -31,7 +31,6 @@ txt_frm = Frame(main,width = 600,height = 600)
 txt = Text(txt_frm,borderwidth = 3,relief = "sunken")
 txt.config(font=("consolas", 12), undo=True, wrap='word')
 txt.grid(row=0, column=0, sticky="nsew", padx=2, pady=2)
-txt.bind("<Button-1>",callback)
 scrollb = Scrollbar(txt_frm,command = txt.yview)
 scrollb.grid(row=0, column=1, sticky='nsew')
 txt['yscrollcommand'] = scrollb.set
