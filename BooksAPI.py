@@ -3,20 +3,19 @@ import json
 import urllib
 import cachetools
 import time
-from cachetools import cached,TTLCache
-cache = TTLCache(maxsize = 100, ttl = 300)
+from functools import lru_cache
 
-@cached(cache)
+@lru_cache(maxsize = 100)
 def search_by_title(query):
     link = "https://www.googleapis.com/books/v1/volumes?q="+query
     return generate_result(link)
 
-@cached(cache)
+@lru_cache(maxsize = 100)
 def search_by_ISBN(query):
     link = "https://www.googleapis.com/books/v1/volumes?q=isbn:"+query
     return generate_result(link)
 
-@cached(cache)
+@lru_cache(maxsize = 100)
 def search_by_author(query):
     link = "https://www.googleapis.com/books/v1/volumes?q=inauthor:"+query
     return generate_result(link)
@@ -30,4 +29,3 @@ def generate_result(link):
             final_result += i + ", "
         final_result += '\n\n'
     return final_result
-
