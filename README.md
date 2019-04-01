@@ -10,13 +10,16 @@ An Application which uses the Google Books API to let the user search for books 
 
 # Installation
 ## You'll need the following technologies:
-1.Python\
+1.Python 3
 
-## You'll need the following libraries:
+## You'll need the following python libraries:
 1.requests\
 2.json\
 3.urllib\
 4.functools\
 5.tkinter\
-6.time\
+6.time
 
+## Steps:
+1.Navigate to the folder 'BookProject'\
+2.run the command 'python MainApp.py'
