@@ -1,8 +1,6 @@
 from tkinter import *
 from BooksAPI import search_by_title,search_by_ISBN,search_by_author,results_references,master_references,convert_to_string
 import time
-import copy
-import webbrowser
 
 def get_result():                               #Gets the result and sets it in the label that displays the result
     results_references.clear()
