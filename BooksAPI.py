@@ -33,7 +33,7 @@ def convert_to_string(results_list):                        #Takes information f
     return aux_result
 
 @lru_cache(maxsize = 100)                                   #Decorator to implement Least Recently Used cache
-def generate_result(link):                                  #Uses the Google Book   s API to get data which then, uses to create objects. Stores references to these objects in 2 different lists mentioned above
+def generate_result(link):                                  #Uses the Google Books API to get data which then, uses to create objects. Stores references to these objects in 2 different lists mentioned above
     response = requests.get(link).json()
     for x in response["items"]:
         title = x["volumeInfo"]["title"]
