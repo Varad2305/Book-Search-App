@@ -31,3 +31,8 @@ This program uses the Google Books API to search for books
 The application uses 'Least Recently Used' cache to temporarily store results of queries to improve performance
 ## 3. All Queries button:
 The user can click on the 'All Queries' button to see all the queries made until that point of time
+## 4.Time Label:
+The time taken to execute the query is displayed below the 'All Queries' button
+
+# Notes
+1. The data taken from the Google Books API is not always consistent. If a query does not work even if there is a book like that, it must be because the program is trying to access some information which is not there in the data received. The program is trying to access data which is most commonly available.
