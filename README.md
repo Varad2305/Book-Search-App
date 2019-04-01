@@ -21,7 +21,7 @@ An Application which uses the Google Books API to let the user search for books 
 6.time
 
 ## Steps:
-1.Navigate to the folder 'BookProject'\
+1.Navigate to the folder 'Book-Search-App-master'\
 2.Run the command 'python MainApp.py'
 
 # Features:
