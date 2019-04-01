@@ -6,7 +6,7 @@ An Application which uses the Google Books API to let the user search for books 
 2.Select whether you want to search by Title, Author or ISBN number\
 3.Hit Search to get all the results\
 4.The time required to execute the query is displayed below the 'All Queries' button\
-5.You can click the 'All Queries' button to view results of all the queries you made until that point\
+5.You can click the 'All Queries' button to view results of all the queries you made until that point
 
 # Installation
 ## You'll need the following technologies:
@@ -22,4 +22,12 @@ An Application which uses the Google Books API to let the user search for books 
 
 ## Steps:
 1.Navigate to the folder 'BookProject'\
-2.run the command 'python MainApp.py'
+2.Run the command 'python MainApp.py'
+
+# Features:
+## 1. Google Books API: 
+This program uses the Google Books API to search for books
+## 2. LRU cache: 
+The application uses 'Least Recently Used' cache to temporarily store results of queries to improve performance
+## 3. All Queries button:
+The user can click on the 'All Queries' button to see all the queries made until that point of time
